@@ -1,161 +1,1077 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Salih Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="typing"></title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts p -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
-    <!-- fonts 2  button-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
-
-    <link href="style1.css" rel="stylesheet">
-    <script defer src="script.js"></script>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-md-7 col-sm-7 col-xl-7">
-            <div class="nav">
-                <nav class="navbar">
-                    <a class="nav-item " href="#section10">Clock</a>
-                    <a class="nav-item " href="#section1">Hello</a>
-                    <a class="nav-item " href="#section2">About me</a>
-                    <a class="nav-item " href="#section3">Repostory</a>
-                    <a class="nav-item " href="#section4">Contact</a>
-                </nav>
-            </div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/salihlogo.png" alt="Salih PIRNAZ" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Salih PIRNAZ">Salih PIRNAZ</h1>
+
+          <p class="title">Developer & Embedded Software</p>
         </div>
-    </div>
-    <div class="col-md-5 col-sm-5 col-xl-5"></div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-xl-12">
-            <div id="section10" class="section">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xl-4"></div>
-                    <div class="col-md-4 col-sm-4 col-xl-4 ">
-                        <div class="text-wr">
-                            <div class="clock">
-                                <div class="hand hour" data-hour-hand></div>
-                                <div class="hand minute" data-minute-hand></div>
-                                <div class="hand second" data-second-hand></div>
-                                <div class="number text-light number1">I</div>
-                                <div class="number text-light number2">I</div>
-                                <div class="number text-light number3">I</div>
-                                <div class="number text-light number4">I</div>
-                                <div class="number text-light number5">I</div>
-                                <div class="number text-light number6">I</div>
-                                <div class="number text-light number7">I</div>
-                                <div class="number text-light number8">I</div>
-                                <div class="number text-light number9">I</div>
-                                <div class="number text-light number10">I</div>
-                                <div class="number text-light number11">I</div>
-                                <div class="number text-light number12 anton">SP</div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xl-4"></div>
-                    </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>İletişim Bilgilerini göster</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="salihbaz07@gmail.com" class="contact-link">salihbaz07@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Date of Birth</p>
+
+              <time datetime="2000-09-05">17 September 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="flask-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Education Degree</p>
+
+              <a class="contact-link">Associate Degree</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Kocaeli, Turkey</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/mr.salihprnz" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/mr_Salihprnz" target="_blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/salih-pirnaz" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/salihprnz07" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About me</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>My Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificates</button>
+          </li>
+
+          <!--<li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>-->
+
+          <!--<li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>-->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about me  active" data-page="about me">
+
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I have 4 years of IT experience, I improve myself by working on team projects, I also refresh my code
+            knowledge by contributing to open source projects. I have used networks such as hardware, network devices to
+            understand the working logic of machines and I work in different languages.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Github Repositories</h3>
+
+          <ul class="service-list">
+
+            <a href="https://github.com/stars/salihprnz07/lists/ecole" target="_blank" class="hvr-bounce-out">
+              <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-folder.svg" width="40">
                 </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Ecole42 - Kocaeli</h4>
+
+                  <p class="service-item-text">
+                    42Kocaeli için gerekli olan bütün dosyaların ve dokümanların var olduğu repository.
+                  </p>
+                </div>
+              </li>
+            </a>
+
+            <a href="https://github.com/salihprnz07/CS50_Work" target="_blank" class="hvr-bounce-out">
+              <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-folder.svg" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Harvard CS50x</h4>
+
+                  <p class="service-item-text">
+                    CS50x eğitiminde yazdığım her seviyeden Python ve C kodları mevcut bunlara bakarak alıştırmalar
+                    yapabilirsiniz.
+                  </p>
+                </div>
+
+              </li>
+            </a>
+
+          </ul>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="assets/images/icon-js-logo.svg" width="40">
+                <h5 class="h5">MacOS</h5>
+                <data value="80">%80</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="assets/images/icon-flutter-logo.svg" width="40">
+                <h5 class="h5">Python</h5>
+                <data value="45">%45</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 45%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="assets/images/icon-php-logo.svg" width="40">
+                <h5 class="h5">GO</h5>
+                <data value="35">%35</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 35%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="assets/images/icon-c-logo.svg" width="40">
+                <h5 class="h5">C#</h5>
+                <data value="35">%35</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 35%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="assets/images/icon-sql-logo.svg" width="40">
+                <h5 class="h5">SQL</h5>
+                <data value="25">%25</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 25%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="assets/images/icon-ps-logo.svg" width="40">
+                <h5 class="h5">Windows</h5>
+                <data value="85">%85</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="assets/images/icon-xd-logo.svg" width="40">
+                <h5 class="h5">C</h5>
+                <data value="75">%75</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="assets/images/icon-ai-logo.svg" width="40">
+                <h5 class="h5">Linux</h5>
+                <data value="45">%45</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 45%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="assets/images/icon-xd-logo.svg" width="40">
+                <h5 class="h5">Git and Github</h5>
+                <data value="75">%75</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <img src="assets/images/icon-ai-logo.svg" width="40">
+                <h5 class="h5">Visual Machine</h5>
+                <data value="45">%45</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 45%;"></div>
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-    </div>
-    <div class='scrolldown' style="--color: yellow; left: 1450px; bottom: 60px">
-        <div class="chevrons">
-            <div class='chevrondown'></div>
-            <div class='chevrondown'></div>
-        </div>
+
+
+        <!--
+          - clients
+        
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="my resume">
+
+        <header>
+          <h2 class="h2 article-title">My Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Eğitim</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Anadolu Üniversitesi • Yönetim Bilişim Sistemleri</h4>
+
+              <span>09/2020 — </span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Erasmus+ • Higher School of Transport "Todor Kableshkov" / Bulgaristan
+              </h4>
+
+              <span>09/2019 — 03/2020</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Kocaeli Üniversitesi • Bilgisayar Programcılığı</h4>
+
+              <span>09/2018 — 06/2020</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Özel Cebir Anadolu Lisesi</h4>
+
+              <span>09/2014 — 06/2018</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Deneyim</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PremierTurk Bilgi Teknolojileri A.Ş</h4>
+
+              <span>10/2021 — 01/2022</span>
+
+              <p class="timeline-text">
+                Yazılım Geliştiricisi, Mobil ve Web uygulama geliştirme
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">K7 Yazılım ve Bilişim Teknolojileri San. Tic. Ltd. Şti.</h4>
+
+              <span>06/2019 — 08/2019</span>
+
+              <p class="timeline-text">
+                Stajyer, tasarımsal çalışmalar ve iOS işletim sistemi üzerine uygulama geliştirme
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">K7 Yazılım ve Bilişim Teknolojileri San. Tic. Ltd. Şti.</h4>
+
+              <span>09/2018 — 06/2019</span>
+
+              <p class="timeline-text">
+                Tasarım ve Sistem Elemanı, iOS uygulama geliştirme, tasarımsal çalışmalar, website çizimi, logo ve ikon
+                çizimi, Server-side ve terminal bazlı
+                çalışmalar
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="certificates">
+
+        <header>
+          <h2 class="h2 article-title">Certificates</h2>
+        </header>
+
+        <section class="projects">
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select style="display: none;">
+            </button>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active">
+              <a href="https://github.com/akifdora/stok-yonetimi-uygulamasi" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/stokyonetim.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Stok Yönetim Uygulaması</h3>
+
+                <p class="project-category">Masaüstü Uygulaması</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://dorapoly.gitbook.io/nedir/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/dorapoly.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dorapoly</h3>
+
+                <p class="project-category">Discord Botu</p>
+
+              </a>
+            </li>
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!--<article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>-->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+      -->
+
     </div>
 
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-xl-12">
-            <div id="section1" class="section">
-                <div class="text-wr">
-                    <h1 class="title">
-                        <div class="title-top anton">Helllo!</div>
-                        <p>Welcome my blog page, I'm so excited to meet you, let's talk a little bit about what I've
-                            been up to</p>
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-xl-12">
-            <div id="section2" class="section">
-                <div class="text-wr">
-                    <div class="title-top anton text-dark">I am Salih</div>
-                    <h1 class="text-dark anton">I'm Backend developer, I have 4 years of experience in informatics, I
-                        try to improve myself by working on team projects, I also refresh my code knowledge by
-                        contributing to open source projects.
-                        I used hardware, network devices and worked in different languages in order to understand the
-                        logic of machine operation.</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-xl-12">
-            <div id="section3" class="section">
-                <div class="text-wr">
-                    <h1 class="title rale">
-                        <p>This website is my little start.Thanks for your visit</p>
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-xl-12">
-            <div id="section4" class="section">
-                <div class="text-wr ">
+  </main>
 
-                    <hr class="bg-dark">
-                    <h1 class="title-top anton text-dark ">Contact Me</h1>
-                    <a class="bn39" href="https://drive.google.com/file/d/1Fh5OVMv7SksWdgttFsDZabbyU1KF_rjG/view?usp=sharing" style="left:59px; bottom: 40px" data-text="CV İNDİR"><span class="bn39span">CV indir</span></a>
-                    <h5 class="text-dark anton ">salihbaz07@gmail.com</h4>
-                        <hr class="bg-dark">
-                        <div class="">
-                            <a href="https://github.com/salihprnz07" class="btn btn-dark text-light" target="_blank"
-                                rel="noopener noreferrer"><i class="fi-xnsuxl-github"></i></a>
-                            <a href="https://www.linkedin.com/in/salih-pirnaz" class="btn btn-danger text-light"
-                                target="_blank" rel="noopener noreferrer"><i class="fi-cnsuxl-linkedin"></i></a>
-                            <a href="https://www.instagram.com/mr.salihprnz" class="btn btn-primary text-light"
-                                target="_blank" rel="noopener noreferrer"><i class="fi-xnsuxl-instagram"></i></a>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="dist/slideNav.js" type="text/javascript"></script>
-    <script>
-        window.slide = new SlideNav({
-            changeHash: true
-        });
-    </script>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="assets/js/typed.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
