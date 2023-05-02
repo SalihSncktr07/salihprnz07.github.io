@@ -2,7 +2,7 @@
 
 /* Title Typewrite Effect */
 var typed = new Typed(".typing",{
-  strings: ["Selamlar ben Salih","Burası benim","kişisel websitem!"],
+  strings: ["Greetings, I'm Salih","This is me","my personal website!"],
    typeSpeed: 150,
    bacSpeed: 60,
    loop: true
